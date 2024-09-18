@@ -1,0 +1,39 @@
+.food-display{
+    margin-top: 30px;
+
+}
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+@media (max-width: 768px) {
+    .food-display h2 {
+        font-size: max(3vw, 22px); /* Adjust heading size for smaller screens */
+    }
+
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size */
+        gap: 20px; /* Smaller gap for narrower screens */
+        row-gap: 40px; /* Adjust vertical gap */
+    }
+}
+
+/* Media query for mobile screens (below 480px) */
+@media (max-width: 480px) {
+    .food-display h2 {
+        font-size: max(4vw, 20px); /* Further reduce heading size on small devices */
+    }
+
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Narrower columns for mobile */
+        gap: 15px; /* Smaller gap for compact layout */
+        row-gap: 30px; /* Reduce row gap */
+    }
+}

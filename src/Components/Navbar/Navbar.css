@@ -1,0 +1,201 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #49557e;
+  font-size: 18px;
+}
+
+.navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar-menu a {
+  color: #49557e;
+  padding-bottom: 2px;
+}
+
+.navbar .active {
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+}
+
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1050px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    font-size: 17px;
+    gap: 15px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+  .navbar button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
+
+/* For Small Laptops */
+@media (max-width: 900px) {
+  .navbar .logo {
+    width: 120px;
+  }
+
+  .navbar-menu {
+    font-size: 16px;
+    gap: 10px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar button {
+    padding: 7px 20px;
+    font-size: 14px;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 750px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar .logo {
+    width: 100px;
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu links on mobile */
+  }
+
+  .navbar-right {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar-search-icon img {
+    width: 20px;
+  }
+
+  .navbar button {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+
+  /* Add a Hamburger Menu for Mobile */
+  .mobile-menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/* For Very Small Devices */
+@media (max-width: 500px) {
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .navbar .logo {
+    width: 80px;
+  }
+
+  .navbar button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

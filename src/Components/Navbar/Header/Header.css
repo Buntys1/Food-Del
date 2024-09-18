@@ -1,0 +1,108 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('./header_img.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text and button to the left */
+    justify-content: center;
+    gap: 1.5vw;
+    max-width: 50%; /* Adjust this width as per your design */
+    bottom: 10%;
+    left: 6vw; /* Positions the contents from the left */
+    animation: fadeIn 3s;
+    padding: 0 2vw; /* Padding to give some space on smaller screens */
+    text-align: left; /* Ensure text is aligned to the left */
+  }
+  
+  .header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4vw, 22px);
+    text-align: left; /* Ensure heading is aligned to the left */
+  }
+  
+  .header-contents p {
+    color: white;
+    font-size: max(1vw, 14px);
+    text-align: left; /* Ensure paragraph is aligned to the left */
+    margin: 0;
+  }
+  
+  .header-contents button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  
+  .header-contents button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1050px) {
+    .header-contents {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .header-contents {
+      max-width: 90%;
+      bottom: 5%;
+    }
+  
+    .header-contents p {
+      display: none;
+    }
+  
+    .header-contents button {
+      padding: 2vw 4vw;
+      font-size: max(2vw, 14px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .header {
+      height: 50vw;
+    }
+  
+    .header-contents {
+      max-width: 90%;
+      bottom: 10%;
+    }
+  
+    .header-contents h2 {
+      font-size: max(5vw, 18px);
+    }
+  
+    .header-contents button {
+      padding: 3vw 5vw;
+      font-size: max(3vw, 16px);
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
