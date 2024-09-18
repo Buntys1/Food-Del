@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './Fooddisplay.css'
 import { StoreContext } from '../../Context/Storecontext'
 import FoodItem from '../FoodItem/FoodItem'
-const Fooddisplay = ({category}) => {
+const FoodDisplay = ({category}) => {
 
     const {food_list}=useContext(StoreContext)
 
@@ -23,4 +23,4 @@ const Fooddisplay = ({category}) => {
   )
 }
 
-export default Fooddisplay
+export default FoodDisplay
