@@ -3,7 +3,7 @@ import './Home.css'
 import Header from '../../Components/Navbar/Header/Header'
 import ExploreMenu from '../../Components/ExploreMenu/ExploreMenu'
 import AppDownload from '../../Components/AppDownload/AppDownload'
-import FoodDisplay from '../../Components/FoodDisplay/FoodDisplay'
+import FoodDisplay from '../../Components/FoodDisplay/FoodDisplay1'
 
 
 
